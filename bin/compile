@@ -4,6 +4,9 @@
 # Work in the build directory
 cd $1
 
+echo "HOME: $HOME"
+echo "build dir: $1"
+
 # Source in all the profile stuff
 for profile in ./.profile.d/*; do
     . ${profile}
